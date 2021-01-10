@@ -1,8 +1,7 @@
 SwiftUI_RefreshList
 ===============
-```
-https://github.com/clementlvx/SwiftUI_RefreshList/blob/main/Docs/screen.gif
-```
+
+<image src="docs/screen.gif" width="40%">
 
 ### SwiftPM
 

@@ -1,5 +1,8 @@
 SwiftUI_RefreshList
 ===============
+```
+https://github.com/clementlvx/SwiftUI_RefreshList/blob/main/Docs/screen.gif
+```
 
 ### SwiftPM
 

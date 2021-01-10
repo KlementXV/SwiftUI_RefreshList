@@ -1,6 +1,8 @@
 SwiftUI_RefreshList
 ===============
 
+<image src="Docs/screen.gif" width="40%">
+
 ### SwiftPM
 
 ```

@@ -18,10 +18,7 @@ public struct ListRefresh<Content: View>: View {
                 self.content()
                     .introspectTableView { tableView in
                         tableView.refreshControl = UIRefreshControl { refreshControl in
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                withAnimation { self.action() }
-                                refreshControl.endRefreshing()
-                            }
+                            self.action()
                         }
                     }
             }

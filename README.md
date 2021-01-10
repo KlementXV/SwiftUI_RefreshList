@@ -20,15 +20,18 @@ struct ContentView: View {
     @State var Data:[Int] = [1,2,3]
 
     var body: some View {
-    ListRefresh(action: AddData()){
-        List {
-            Foreach(Data){ number in
-                Text("\(number)")
+        ListRefresh(action: { AddData() } ){
+            List {
+                ForEach(Data, id: \.self){ number in
+                    Text("\(number)")
+                }
             }
         }
     }
     func AddData(){
-        Data += [Data.count+1]
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            withAnimation{ Data += [Data.count+1] }
+        }
     }
 }
 ```
